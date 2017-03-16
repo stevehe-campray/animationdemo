@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+#import "ViewController.h"
+#import "FistViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +19,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    
+    UINavigationController *root = [[UINavigationController alloc] initWithRootViewController:[[ViewController alloc] init]];
+    
+    self.window.rootViewController = root;
+    
+    
     return YES;
 }
 

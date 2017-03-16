@@ -9,6 +9,7 @@
 #import "ViewController.h"
 
 #import "flashanimationViewController.h"
+#import "FistViewController.h"
 
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
 
@@ -68,11 +69,16 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
 //    NSLog(@"%ld",indexPath.row);
     
-    flashanimationViewController *flashvc = [[flashanimationViewController alloc] init];
     
-    [self presentViewController:flashvc animated:YES completion:^{
-        NSLog(@"111");
-    }];
+    FistViewController *fistviewvc = [[FistViewController alloc] init];
+    
+    [self.navigationController pushViewController:fistviewvc animated:YES];
+    
+//    flashanimationViewController *flashvc = [[flashanimationViewController alloc] init];
+//    
+//    [self presentViewController:flashvc animated:YES completion:^{
+//        NSLog(@"111");
+//    }];
     
 }
 

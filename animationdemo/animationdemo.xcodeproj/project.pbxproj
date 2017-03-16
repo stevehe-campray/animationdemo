@@ -16,6 +16,11 @@
 		74F8ED601E78F1B80069F1A0 /* animationdemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED5F1E78F1B80069F1A0 /* animationdemoTests.m */; };
 		74F8ED6B1E78F1B80069F1A0 /* animationdemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED6A1E78F1B80069F1A0 /* animationdemoUITests.m */; };
 		74F8ED7A1E78F1EA0069F1A0 /* flashanimationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED791E78F1EA0069F1A0 /* flashanimationViewController.m */; };
+		74F8ED7F1E7A5EC80069F1A0 /* FistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED7E1E7A5EC80069F1A0 /* FistViewController.m */; };
+		74F8ED821E7A5ED50069F1A0 /* SeccendViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED811E7A5ED50069F1A0 /* SeccendViewController.m */; };
+		74F8ED851E7A60250069F1A0 /* HJJTransitionsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED841E7A60250069F1A0 /* HJJTransitionsAnimation.m */; };
+		74F8ED891E7A66910069F1A0 /* UIViewController+HJJTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED881E7A66910069F1A0 /* UIViewController+HJJTransitions.m */; };
+		74F8ED8C1E7A6AB80069F1A0 /* FirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED8B1E7A6AB80069F1A0 /* FirstCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +59,16 @@
 		74F8ED6C1E78F1B80069F1A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74F8ED781E78F1EA0069F1A0 /* flashanimationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flashanimationViewController.h; sourceTree = "<group>"; };
 		74F8ED791E78F1EA0069F1A0 /* flashanimationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flashanimationViewController.m; sourceTree = "<group>"; };
+		74F8ED7D1E7A5EC80069F1A0 /* FistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FistViewController.h; sourceTree = "<group>"; };
+		74F8ED7E1E7A5EC80069F1A0 /* FistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FistViewController.m; sourceTree = "<group>"; };
+		74F8ED801E7A5ED50069F1A0 /* SeccendViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeccendViewController.h; sourceTree = "<group>"; };
+		74F8ED811E7A5ED50069F1A0 /* SeccendViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeccendViewController.m; sourceTree = "<group>"; };
+		74F8ED831E7A60250069F1A0 /* HJJTransitionsAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HJJTransitionsAnimation.h; sourceTree = "<group>"; };
+		74F8ED841E7A60250069F1A0 /* HJJTransitionsAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HJJTransitionsAnimation.m; sourceTree = "<group>"; };
+		74F8ED871E7A66910069F1A0 /* UIViewController+HJJTransitions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+HJJTransitions.h"; sourceTree = "<group>"; };
+		74F8ED881E7A66910069F1A0 /* UIViewController+HJJTransitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HJJTransitions.m"; sourceTree = "<group>"; };
+		74F8ED8A1E7A6AB80069F1A0 /* FirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCell.h; sourceTree = "<group>"; };
+		74F8ED8B1E7A6AB80069F1A0 /* FirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +119,7 @@
 		74F8ED441E78F1B80069F1A0 /* animationdemo */ = {
 			isa = PBXGroup;
 			children = (
+				74F8ED7C1E7A5E910069F1A0 /* zhuancangdonghua */,
 				74F8ED7B1E79130B0069F1A0 /* Reflashview */,
 				74F8ED481E78F1B80069F1A0 /* AppDelegate.h */,
 				74F8ED491E78F1B80069F1A0 /* AppDelegate.m */,
@@ -151,6 +167,23 @@
 			children = (
 			);
 			path = Reflashview;
+			sourceTree = "<group>";
+		};
+		74F8ED7C1E7A5E910069F1A0 /* zhuancangdonghua */ = {
+			isa = PBXGroup;
+			children = (
+				74F8ED7D1E7A5EC80069F1A0 /* FistViewController.h */,
+				74F8ED7E1E7A5EC80069F1A0 /* FistViewController.m */,
+				74F8ED801E7A5ED50069F1A0 /* SeccendViewController.h */,
+				74F8ED811E7A5ED50069F1A0 /* SeccendViewController.m */,
+				74F8ED831E7A60250069F1A0 /* HJJTransitionsAnimation.h */,
+				74F8ED841E7A60250069F1A0 /* HJJTransitionsAnimation.m */,
+				74F8ED871E7A66910069F1A0 /* UIViewController+HJJTransitions.h */,
+				74F8ED881E7A66910069F1A0 /* UIViewController+HJJTransitions.m */,
+				74F8ED8A1E7A6AB80069F1A0 /* FirstCell.h */,
+				74F8ED8B1E7A6AB80069F1A0 /* FirstCell.m */,
+			);
+			path = zhuancangdonghua;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,8 +318,13 @@
 			files = (
 				74F8ED4D1E78F1B80069F1A0 /* ViewController.m in Sources */,
 				74F8ED4A1E78F1B80069F1A0 /* AppDelegate.m in Sources */,
+				74F8ED891E7A66910069F1A0 /* UIViewController+HJJTransitions.m in Sources */,
+				74F8ED821E7A5ED50069F1A0 /* SeccendViewController.m in Sources */,
+				74F8ED851E7A60250069F1A0 /* HJJTransitionsAnimation.m in Sources */,
+				74F8ED8C1E7A6AB80069F1A0 /* FirstCell.m in Sources */,
 				74F8ED7A1E78F1EA0069F1A0 /* flashanimationViewController.m in Sources */,
 				74F8ED471E78F1B80069F1A0 /* main.m in Sources */,
+				74F8ED7F1E7A5EC80069F1A0 /* FistViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -510,6 +548,7 @@
 				74F8ED711E78F1B80069F1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74F8ED721E78F1B80069F1A0 /* Build configuration list for PBXNativeTarget "animationdemoTests" */ = {
 			isa = XCConfigurationList;
@@ -518,6 +557,7 @@
 				74F8ED741E78F1B80069F1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		74F8ED751E78F1B80069F1A0 /* Build configuration list for PBXNativeTarget "animationdemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +566,7 @@
 				74F8ED771E78F1B80069F1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
