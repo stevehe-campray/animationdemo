@@ -11,11 +11,18 @@
 #import "flashanimationViewController.h"
 #import "FistViewController.h"
 
-@interface ViewController ()<UITableViewDelegate,UITableViewDataSource>
+#import "flashanimationview.h"
+
+#import "AFFNumericKeyboard.h"
+
+@interface ViewController ()<UITableViewDelegate,UITableViewDataSource,AFFNumericKeyboardDelegate>
 
 @property(nonatomic,copy)NSArray *titlearray;
 
 @property(nonatomic,strong)UITableView *contentableview;
+
+@property(nonatomic,strong)UITextField *textUItextFiled;
+
 @end
 
 @implementation ViewController
@@ -38,13 +45,36 @@
 
 -(void)setUpMainInterface{
     
-    _contentableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, self.view.frame.size.width, self.view.frame.size.height)];
+    
+    UIView *header = [[UIView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, 300)];
+    flashanimationview *flashview = [[flashanimationview alloc] initWithFrame:CGRectMake(40, 60, 100, 100)];
+    [header addSubview:flashview];
+    
+    [flashview beginanimation];
+    header.backgroundColor = [UIColor lightGrayColor];
+    
+    
+    UITextField *uitextfied = [[UITextField alloc] initWithFrame:CGRectMake(40, 160, 200, 30)];
+    
+    uitextfied.layer.borderWidth = 2.f;
+    uitextfied.layer.borderColor = [UIColor lightGrayColor].CGColor;
+    uitextfied.textColor = [UIColor whiteColor];
+    
+    AFFNumericKeyboard *keyboard = [[AFFNumericKeyboard alloc] initWithFrame:CGRectMake(0, 200, 375, 216)];
+    keyboard.delegate = self;
+    _textUItextFiled = uitextfied;
+    uitextfied.inputView = keyboard;
+    [header addSubview:uitextfied];
+    
+    
+    _contentableview = [[UITableView alloc] initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
     
     _contentableview.delegate = self;
     _contentableview.dataSource = self;
     
     [self.view addSubview:_contentableview];
     
+    _contentableview.tableHeaderView = header;
     
 }
 
@@ -62,6 +92,34 @@
     }
     cell.textLabel.text = _titlearray[indexPath.row];
     return cell;
+    
+}
+
+
+
+- (void) numberKeyboardInput:(NSInteger) number{
+
+    @autoreleasepool {
+        
+        NSString *temperstr = _textUItextFiled.text;
+    
+        NSString *newstr = [NSString stringWithFormat:@"%@%ld",temperstr,(long)number];
+    
+        if (newstr.length > 10) {
+            return;
+        }else{
+            _textUItextFiled.text = newstr;
+        }
+    }
+    
+}
+- (void) numberKeyboardBackspace{
+    
+}
+- (void) changeKeyboardType{
+    
+}
+- (void) longPressDelete{
     
 }
 

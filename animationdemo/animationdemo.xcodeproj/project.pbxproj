@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		747CCCA41E7B75F900235B25 /* AFFNumericKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 747CCCA31E7B75F900235B25 /* AFFNumericKeyboard.m */; };
+		747CCCA61E7B761000235B25 /* arrowInKeyboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 747CCCA51E7B761000235B25 /* arrowInKeyboard.png */; };
 		74F8ED471E78F1B80069F1A0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED461E78F1B80069F1A0 /* main.m */; };
 		74F8ED4A1E78F1B80069F1A0 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED491E78F1B80069F1A0 /* AppDelegate.m */; };
 		74F8ED4D1E78F1B80069F1A0 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED4C1E78F1B80069F1A0 /* ViewController.m */; };
@@ -21,6 +23,7 @@
 		74F8ED851E7A60250069F1A0 /* HJJTransitionsAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED841E7A60250069F1A0 /* HJJTransitionsAnimation.m */; };
 		74F8ED891E7A66910069F1A0 /* UIViewController+HJJTransitions.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED881E7A66910069F1A0 /* UIViewController+HJJTransitions.m */; };
 		74F8ED8C1E7A6AB80069F1A0 /* FirstCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED8B1E7A6AB80069F1A0 /* FirstCell.m */; };
+		74F8ED8F1E7A87460069F1A0 /* flashanimationview.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F8ED8E1E7A87460069F1A0 /* flashanimationview.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		747CCCA31E7B75F900235B25 /* AFFNumericKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFFNumericKeyboard.m; sourceTree = "<group>"; };
+		747CCCA51E7B761000235B25 /* arrowInKeyboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = arrowInKeyboard.png; sourceTree = "<group>"; };
+		747CCCA71E7B761C00235B25 /* AFFNumericKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFFNumericKeyboard.h; sourceTree = "<group>"; };
 		74F8ED421E78F1B80069F1A0 /* animationdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = animationdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74F8ED461E78F1B80069F1A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		74F8ED481E78F1B80069F1A0 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -69,6 +75,8 @@
 		74F8ED881E7A66910069F1A0 /* UIViewController+HJJTransitions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+HJJTransitions.m"; sourceTree = "<group>"; };
 		74F8ED8A1E7A6AB80069F1A0 /* FirstCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstCell.h; sourceTree = "<group>"; };
 		74F8ED8B1E7A6AB80069F1A0 /* FirstCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstCell.m; sourceTree = "<group>"; };
+		74F8ED8D1E7A87460069F1A0 /* flashanimationview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = flashanimationview.h; sourceTree = "<group>"; };
+		74F8ED8E1E7A87460069F1A0 /* flashanimationview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = flashanimationview.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +173,11 @@
 		74F8ED7B1E79130B0069F1A0 /* Reflashview */ = {
 			isa = PBXGroup;
 			children = (
+				74F8ED8D1E7A87460069F1A0 /* flashanimationview.h */,
+				74F8ED8E1E7A87460069F1A0 /* flashanimationview.m */,
+				747CCCA31E7B75F900235B25 /* AFFNumericKeyboard.m */,
+				747CCCA71E7B761C00235B25 /* AFFNumericKeyboard.h */,
+				747CCCA51E7B761000235B25 /* arrowInKeyboard.png */,
 			);
 			path = Reflashview;
 			sourceTree = "<group>";
@@ -290,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				74F8ED551E78F1B80069F1A0 /* LaunchScreen.storyboard in Resources */,
+				747CCCA61E7B761000235B25 /* arrowInKeyboard.png in Resources */,
 				74F8ED521E78F1B80069F1A0 /* Assets.xcassets in Resources */,
 				74F8ED501E78F1B80069F1A0 /* Main.storyboard in Resources */,
 			);
@@ -316,8 +330,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74F8ED8F1E7A87460069F1A0 /* flashanimationview.m in Sources */,
 				74F8ED4D1E78F1B80069F1A0 /* ViewController.m in Sources */,
 				74F8ED4A1E78F1B80069F1A0 /* AppDelegate.m in Sources */,
+				747CCCA41E7B75F900235B25 /* AFFNumericKeyboard.m in Sources */,
 				74F8ED891E7A66910069F1A0 /* UIViewController+HJJTransitions.m in Sources */,
 				74F8ED821E7A5ED50069F1A0 /* SeccendViewController.m in Sources */,
 				74F8ED851E7A60250069F1A0 /* HJJTransitionsAnimation.m in Sources */,
