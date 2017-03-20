@@ -112,14 +112,13 @@
     } completion:^(BOOL finished) {
         
         [UIView animateWithDuration:_duration/3 animations:^{
-            
             custemviews.transform = CGAffineTransformIdentity;
         } completion:^(BOOL finished) {
             
             if (finished) {
 
-            [UIView animateWithDuration:_duration/3 animations:^{
-                custemviews.alpha = 0.0;
+                [UIView animateWithDuration:_duration/3 animations:^{
+                    custemviews.alpha = 0.0;
                 
             } completion:^(BOOL finished) {
                 if (finished) {
@@ -129,12 +128,10 @@
                 }
             }];
             
-            [self addPathAnimateWithView:backgray fromPoint:custemviews.center];
+                [self addPathAnimateWithView:backgray fromPoint:custemviews.center];
                 
             }
         }];
-        
-       
     }];
     
     

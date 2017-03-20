@@ -15,6 +15,8 @@
 
 #import "AFFNumericKeyboard.h"
 
+#import "WaveAnimationViewController.h"
+
 @interface ViewController ()<UITableViewDelegate,UITableViewDataSource,AFFNumericKeyboardDelegate>
 
 @property(nonatomic,copy)NSArray *titlearray;
@@ -31,7 +33,7 @@
     [super viewDidLoad];
     
     
-      _titlearray = @[@"flashanimation"];
+      _titlearray = @[@"flashanimation",@"waveanimation"];
     
     
     [self setUpMainInterface];
@@ -128,9 +130,18 @@
 //    NSLog(@"%ld",indexPath.row);
     
     
-    FistViewController *fistviewvc = [[FistViewController alloc] init];
+    if (indexPath.row==0) {
+        FistViewController *fistviewvc = [[FistViewController alloc] init];
+        
+        [self.navigationController pushViewController:fistviewvc animated:YES];
+    }else{
+        WaveAnimationViewController *waveanimationvc = [[WaveAnimationViewController alloc] init];
+        
+        [self.navigationController pushViewController:waveanimationvc animated:YES];
+        
+    }
     
-    [self.navigationController pushViewController:fistviewvc animated:YES];
+
     
 //    flashanimationViewController *flashvc = [[flashanimationViewController alloc] init];
 //    
